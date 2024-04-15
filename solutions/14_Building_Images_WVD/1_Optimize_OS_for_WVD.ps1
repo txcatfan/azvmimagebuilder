@@ -11,7 +11,7 @@
  Invoke-WebRequest -Uri $osOptURL -OutFile $outputPath
  write-host 'AIB Customization: Starting OS Optimizations script'
  Expand-Archive -LiteralPath 'C:\\Optimize\\Windows_10_VDI_Optimize-master.zip' -DestinationPath $Localpath -Force -Verbose
- Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Verbose
+ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Verbose -Scope CurrentUser
  Set-Location -Path C:\\Optimize\\Virtual-Desktop-Optimization-Tool-master
  
  # instrumentation
